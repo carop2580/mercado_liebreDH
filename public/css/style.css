@@ -1,0 +1,336 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* ------ BODY ------ */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+}
+
+/* ------ HEADER ------ */
+header {
+
+    background-color: #EAC926;
+    padding: 10px 10px 20px 10px;
+
+}
+
+#logo {
+    width: 40%;
+    margin-left: 10px;
+    display: inline;
+
+}
+
+.formulario {
+    padding-top: 5px;
+}
+
+.formulario:hover {
+    border: none;
+}
+
+form input {
+    width: 70%;
+    height: 80%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.lupita {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: #666;
+    cursor: pointer;
+
+
+}
+
+#compra {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: aliceblue;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: auto;
+}
+#banner{
+    width: 100%;
+}
+
+/* ------ MAIN ------ */
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#ultimavisita,
+#ofertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.articulo-ar {
+    background-color: #ebebeb;
+    max-width: 400px;
+    margin-bottom: 10px;
+
+}
+
+#img-producto {
+    width: 100%;
+}
+#truck{
+    
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    border: solid 0.5px #39b54a;
+    color: #39b54a;
+    width: 30px;
+    height: 30px;
+    left:290px;
+    bottom: 35px;
+    border-radius: 50%;
+    position: relative;
+    align-content: center;  
+}
+
+
+#titulares {
+    font-size: 24px;
+    color: #666;
+    text-align: left;
+    width: 90%;
+}
+
+.precio {
+    font-size: 18px;
+
+}
+
+#precios {
+    display: flex;
+    position: relative;
+    align-items: baseline;
+    justify-content: start;
+    width: 100%0;
+    gap: 15px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+.articulo img {
+    width: 100%;
+
+
+}
+
+.det-articulo {
+
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+
+
+}
+
+/* ------ FOOTER -------- */
+.iconos {
+    font-size: 2em;
+    color: #1259c3;
+    margin: auto;
+    padding: 20px;
+}
+
+#footers {
+    padding: 10px;
+    margin: 10px;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.des {
+    font-size: 12px;
+}
+
+#footer {
+    text-align: center;
+}
+
+h4 {
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
+}
+
+
+/* ------@medias queries ------ */
+
+/* ----- TABLETS------ */
+@media (min-width: 570px) {
+    form input {
+        margin-left: 10px;
+        height: 25px;
+    }
+
+    .formulario {
+        display: flex;
+        justify-content: end;
+        align-content: center;
+        width: 50%;
+    }
+
+    .lupita {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    #titulares {
+        padding: 15px;
+        margin: 15px;
+        text-align: center;
+    }
+
+    .articulo-ar {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 300px;
+
+    }
+
+    #ultimavisita,
+    #ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+
+    }
+
+    .descripcion {
+        display: block;
+    }        
+    
+    #truck{
+        
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px; 
+        border: 1px solid #39b54a;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+        left: 250px;
+        bottom: 35px;
+        align-content: center; 
+       
+    }
+ 
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .menu1 {
+        display: inline-flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        font-size: 15px;
+        list-style-type: none;
+        gap: 15px;
+    }
+
+    .menu2 {
+        display: inline-flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        font-size: 15px;
+        list-style-type: none;
+        gap: 15px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+
+    #footer {
+        font-size: 20px;
+    }
+}
+    /*------ ESCRITORIO -------*/
+    @media (min-width: 920px) {
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+        }
+        .lupita{
+            font-size: 20px;
+        }
+        #titulares{
+            margin: 10px 15px;
+        }
+      
+        .articulo-ar {
+            max-width: 230px;
+        margin-left: 20px;
+        }
+        #truck {
+            left: 170px;
+          }
+    }

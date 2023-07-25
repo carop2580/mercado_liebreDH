@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <!------    header    ------>
+    <header>
+        <div class="encabezado">
+            <img id="logo" src="images/logo-mercado-liebre.svg" alt="Logo">          
+
+            <!--   compra en cuotas   -->
+            <div id="compra">
+                <i class="fas fa-hand-holding-usd manito"></i>
+                <p>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <!--   navbar   -->
+            <nav class="navbar">
+                <ul class="menu1">
+                    <li type="none"><a href="#">Ofertas</a></li>
+                    <li type="none"><a href="#">Tiendas oficiales</a></li>
+                    <li type="none"><a href="#">Vender</a></li>
+                    <li type="none"><a href="#">Ayuda</a></li>
+                </ul>
+
+                <!--menu cuenta usuario-->
+                <ul class="menu2">
+                    <li type="none">
+                        <a href="/register">Crea tu cuenta</a>
+                        <i class="far fa-id-card"></i>
+                    </li>
+
+
+                    <li type="none">
+                        <a href="/login">Ingresa</a>
+                        <i class="fas fa-sign-in-alt"></i>
+                    </li>
+
+                    <li type="none">
+                        <a href="#">Mis compras</a>
+                        <i class="fas fa-shopping-basket"></i>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="" method="get" class="registro">
+            <h2>Formulario de Registro</h2>
+            <div>
+                <label for="nombre_apellido">Nombre y Apellido:</label>
+                <input type="text" id="nombre_apellido" name="nombre_apellido" required>
+            </div>
+            <div>
+                <label for="nombre_usuario">Nombre de usuario:</label>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+            </div>
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div>
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+            </div>
+            <label class="titulos">PERFIL DE USUARIO:</label>
+           
+            <div class ="radio">
+                <input type="radio" id="comprar" name="perfil_usuario" value="comprar" required>
+                <label for="comprar">Comprar</label>            
+                <input type="radio" id="vender" name="perfil_usuario" value="vender" required>
+                <label for="vender">Vender</label>
+            </div>
+
+            <label class="titulos">CATEGORIA DE INTERES:</label>
+            <div class="checkbox">
+                
+                <input class ="seleccionado "type="checkbox" id="electro" name="categorias_interes[]" value="Electro">
+                <label for="electro">Electro</label>
+                <input class ="seleccionado " type="checkbox" id="moda" name="categorias_interes[]" value="Moda">
+                <label for="moda">Moda</label>
+                <input  class ="seleccionado " type="checkbox" id="hogar" name="categorias_interes[]" value="Hogar">
+                <label for="hogar">Hogar</label>
+                <input class ="seleccionado " type="checkbox" id="jugueteria" name="categorias_interes[]" value="Juguetería">
+                <label for="jugueteria">Juguetería</label>
+                <input class ="seleccionado " type="checkbox" id="vida_sana" name="categorias_interes[]" value="Vida sana">
+                <label for="vida_sana">Vida sana</label>
+            </div>
+            <div>
+                <label class ="titulos" for="foto_usuario">FOTO DE USUARIO: </label>
+                <input type="file" id="foto_usuario" name="foto_usuario" accept="image/*">
+            </div>
+            <div>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div>
+                <label for="confirmar_contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+            </div>
+            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="reset">Borrar</button>
+
+
+
+        </form>
+    </main>
+
+</body>
+
+</html>

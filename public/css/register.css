@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* ------ BODY ------ */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+}
+
+/* ------ HEADER ------ */
+header {
+    
+    background-color: #EAC926;
+    padding: 10px 10px 20px 10px;
+
+}
+
+#logo {
+    width: 40%;
+    margin-left: 10px;
+    display: inline;
+
+}
+
+
+
+#compra {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: aliceblue;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/*------- main ------ */
+
+main{
+    margin-top: 10px;
+   
+}
+form {
+    
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+h2 {
+    padding: 15px;
+    
+}
+.titulos{
+    font-size: 14px;
+    color:#666;
+    padding: 5px;
+    font-weight: bold;
+}
+input:hover{
+    border: solid 2px #1259c3;
+   
+}
+input{
+    border: solid 1px #1259c3;
+    border-radius: 5px;
+    padding: 5px;
+}
+#foto_usuario{
+    border:none;
+}
+/* input[type="file"]:hover{
+    background-color: #252850;
+    color:white;
+    border-radius: 5px; */
+/* } */
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+     
+    }
+   
+
+    .checkbox,
+    .radio {
+      display: flex;
+    }
+    .seleccionado,
+     #comprar,
+    #vender{
+        display: inline-block;
+        padding: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 16px;
+    }
+    .seleccionado:checked{
+        background-color: #1259c3;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: #1259c3;
+      color: #ebebeb;
+      border: solid 1px  #252850;
+      border-radius: 10px;
+    }
+    .btn:hover{
+        
+            background-color: #252850;
+            color:white;
+            border-radius: 10px;
+    }
+
+    /*-------- MEDIA QUERIES -------*/
+    
+    @media (max-width: 374px){
+        .checkbox{
+            display: flex;
+            flex-direction: column;
+            /* align-items: baseline; */
+        }
+       
+        }
+    @media(min-width: 670px){
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+    
+        }
+    
+        .menu1 {
+            display: inline-flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            font-size: 15px;
+            list-style-type: none;
+            gap: 15px;
+        }
+    
+        .menu2 {
+            display: inline-flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            font-size: 15px;
+            list-style-type: none;
+            gap: 15px;
+        }
+    
+        .burger-menu {
+            display: none;
+        }
+    
+    
+    }
+  
