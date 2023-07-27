@@ -127,6 +127,7 @@ main {
     border-radius: 50%;
     position: relative;
     align-content: center;  
+    transition: all 0.5s;
 }
 
 
@@ -213,7 +214,7 @@ h4 {
 /* ------@medias queries ------ */
 
 /* ----- TABLETS------ */
-@media (min-width: 570px) {
+@media (min-width: 670px) {
     form input {
         margin-left: 10px;
         height: 25px;
@@ -238,7 +239,7 @@ h4 {
     }
 
     .articulo-ar {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         max-width: 300px;
 
     }
@@ -250,13 +251,7 @@ h4 {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-
-
-    }
-
-    .descripcion {
-        display: block;
-    }        
+    }     
     
     #truck{
         
@@ -303,15 +298,16 @@ h4 {
     .burger-menu {
         display: none;
     }
-
-
-
+    .descripcion{
+        display: block;
+    }
+    
     #footer {
         font-size: 20px;
     }
 }
     /*------ ESCRITORIO -------*/
-    @media (min-width: 920px) {
+    @media (min-width: 1200px) {
         main {
             display: flex;
             flex-direction: row;
@@ -328,9 +324,26 @@ h4 {
       
         .articulo-ar {
             max-width: 230px;
-        margin-left: 20px;
+            margin-left: 20px;
+            transition: all 0.5s;
         }
         #truck {
             left: 170px;
           }
+          .descripcion {        
+            color: white;
+            transition: all 0.5s;
+        }    
+        .articulo-ar:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+          }
+        
+          .articulo-ar:hover .descripcion {
+            color: #666;
+          }
+        
+          .articulo-ar:hover #truck {
+            transform: rotate(-90deg);
+          }
+    
     }
