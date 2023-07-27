@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +20,16 @@
         <div class="encabezado">
             <img id="logo" src="images/logo-mercado-liebre.svg" alt="Logo">
             <!--   Busqueda   -->
-            <form class ="fomulario" action="" method="get">
+            <div class="busqueda">
+                <form class="fomulario" action="" method="get">
                     <input type="text" placeholder="Busqueda">
-                    <i class="fas fa-search lupita"></i>
-            </form>
-                
-           
+                    <button class="submit">
+                        <i class="fas fa-search lupita"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
             <!--   compra en cuotas   -->
             <div id="compra">
                 <i class="fas fa-hand-holding-usd manito"></i>
@@ -45,33 +50,33 @@
                         <a href="/register">Crea tu cuenta</a>
                         <i class="far fa-id-card"></i>
                     </li>
-    
-    
+
+
                     <li type="none">
                         <a href="/loguin">Ingresa</a>
                         <i class="fas fa-sign-in-alt"></i>
                     </li>
-    
+
                     <li type="none">
                         <a href="#">Mis compras</a>
                         <i class="fas fa-shopping-basket"></i>
                     </li>
-    
+
                 </ul>
             </nav>
             <div class="burger-menu">
                 <i class="fas fa-bars"></i>
             </div>
-        </div>
+        
     </header>
 
-    <!------      banner      ------>    
-    <img id="banner" src="/images/img-home-banner.jpg" alt=""> 
-    
+    <!------      banner      ------>
+    <img id="banner" src="/images/img-home-banner.jpg" alt="">
+
     <!------      main      ------>
     <main>
         <!-- seccion ultimas visitas-->
-        <section id ="ultimavisita">
+        <section id="ultimavisita">
             <h2 id="titulares">Basado en tu ultima Visita</h2>
             <!-- articulo 1 -->
             <article class="articulo-ar">
@@ -200,7 +205,7 @@
                 <div class="footers">
                     <i class="fas fa-credit-card iconos"></i>
                     <li>
-    
+
                         <p id="bold">Pagá con tarjeta o en efectivo</p>
                         <p class="des">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                             puntos de pago. ¡Y siempre es seguro!</p>
@@ -209,7 +214,7 @@
                 <div class="footers">
                     <i class="fas fa-gift iconos"></i>
                     <li>
-    
+
                         <p id="bold">Envío gratis desde $ 2.500</p>
                         <p class="des">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                             productos. Es un beneficio de Mercado Puntos.</p>
@@ -217,17 +222,18 @@
                 </div>
                 <div class="footers">
                     <i class="fas fa-user-shield iconos"></i>
-    
+
                     <li>
-    
+
                         <p id="bold">Seguridad, de principio a fin</p>
                         <p class="des">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                             porque estás siempre protegid@.</p>
                     </li>
                 </div>
-            </ul>            
+            </ul>
             <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
-    </footer>
-    
+        </footer>
+
 </body>
+
 </html>

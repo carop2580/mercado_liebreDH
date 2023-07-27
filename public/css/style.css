@@ -26,9 +26,29 @@ header {
     display: inline;
 
 }
+.encabezado {
+    display: flex;
+}
+.busqueda{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
 
 .formulario {
-    padding-top: 5px;
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 50px;
+    position: absolute;
+    overflow: hidden;
+    background-color: white;
 }
 
 .formulario:hover {
@@ -36,10 +56,26 @@ header {
 }
 
 form input {
-    width: 70%;
-    height: 80%;
-    border: 1px solid white;
-    border-radius: 5px;
+    flex: 1;
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    /* background: transparent; */
+    font-size: 20px;
+    border-radius: 10px;
+}
+.formulario button i{
+    width: 30px;
+}
+.submit{
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    left: -18%;
+   
 }
 
 .lupita {
@@ -48,9 +84,11 @@ form input {
     border-radius: 3px;
     color: #666;
     cursor: pointer;
-
-
+    width: 15%;
+    left: 0;
 }
+
+
 
 #compra {
     display: flex;
@@ -345,5 +383,9 @@ h4 {
           .articulo-ar:hover #truck {
             transform: rotate(-90deg);
           }
-    
+          .iconos:hover {
+            color: #EAC926;
+            cursor: pointer;
+
+          }
     }
