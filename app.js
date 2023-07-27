@@ -23,7 +23,7 @@ app.get("/loguin",(req,res)=>{
 
 
 // ==========> creamos el servidor y le pasamos un mensaje para verificar su funcionalidad
-
-app.listen(3000,()=>{
-    console.log("el servidor esta funcionando")
+const port = process.env.PORT || 3000;
+app.listen(port,()=>{
+    console.log(`el servidor esta funcionando en el puerto:  ${port}`)
 })
